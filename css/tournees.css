@@ -1,0 +1,401 @@
+/* -----HEADER ET TITRE----- */
+
+header {
+  margin-bottom: 0px !important ;
+}
+
+.div_titre{
+  position: absolute;
+  top:25rem; 
+}
+
+.titre:before, 
+.titre:after{
+  width:150%;
+}
+
+
+/* -----PRÉSENTATION DES TOURNÉES----- */
+
+#presentation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+}
+
+#presentation p {
+  width: 25rem;
+}
+
+#texte_presentation{
+  display: flex;
+  justify-content: center;
+  width:25rem;
+  height:10rem;
+  padding: 2rem 3rem 4rem 3rem;
+  margin:0 3rem 3rem 3rem;
+  border-left:5px #d70019 solid;
+  line-height: 30px;
+  color:#474747;
+  background-color:rgba(196, 196, 196, 0.192);
+}
+
+#texte_presentation p{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+
+/* -----CADRE FOND NOIR ET PHOTO----- */
+
+#objectif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#photo_camion{
+    margin-right:30rem;
+    margin-bottom:30rem;
+    border-radius: 1%;
+    width:40rem;
+}
+
+#texte_objectif{
+  display: flex;
+  flex-direction: column;
+  background-color: #070707;
+  max-width:35rem;
+  color:white;
+  position: absolute;
+  right:14rem;
+  padding:1rem 4rem;
+  border-radius: 1%;
+  line-height: 2rem;
+  box-shadow: 10px 8px rgba(0, 0, 0, 0.185);
+  border: 8px solid #dbaa6a;
+}
+
+#titre_objectif {
+font-size: 180%;
+font-weight: 600;
+color: #dbaa6a;
+letter-spacing: 2px;
+text-align: center;
+}
+
+#titre_objectif::first-letter{
+font-size:200%;
+}
+
+#objectif p {
+margin: 1rem;
+}
+
+#objectif a {
+text-decoration: none;
+color: #d70019;
+font-weight: 600;
+font-size: 140%; 
+}
+
+#objectif a:hover{
+ color: #d70019;
+}
+
+#contacter{
+text-align: center;
+}
+
+#contacter a{
+color:white;
+border:1px #d70019 solid;
+padding:7px;
+border-radius: 15px;
+}
+
+#contacter a:hover{
+transition:0.8s;
+color:red;
+}
+
+
+/* -----GIF CAMION----- */
+
+#gif {
+  display: flex;
+  justify-content: center;
+}
+
+#camion {
+  border: 4px solid #d3bc7d;
+  margin: 5rem;
+}
+
+
+/* -----ANIMATION ROUTE ET APPARITION JS----- */
+
+.ck {
+  opacity: 0;
+  position: relative;
+  transition-duration: 2s;
+}
+
+#route{
+  width:60%;
+  transform:rotate(10deg);
+  margin-top:-4rem;
+  margin-left:-65rem;
+  overflow:hidden;
+  z-index:-10;
+  padding:0;
+}
+
+
+/* -----MEDIA QUERIES----- */
+
+@media (max-width: 480px) and (orientation: portrait) {
+
+  #route{
+    display:none;
+  }
+
+  /*TITRE*/
+ .titre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    margin:0;
+  }
+  .titre:before, 
+  .titre:after{
+   width:80%;
+  }
+  .div_titre{
+    width:50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    position:relative;
+  }
+
+  /*PRÉSENTATION DES TOURNÉES*/
+  #presentation{
+    display: flex;
+    justify-content: center;
+    max-width:100vw;
+  }
+  #texte_presentation{
+    font-size:90%;
+    height:19rem;
+    text-align: center;
+    padding:1rem;
+    max-width:80vw;
+    margin:1rem;
+  }
+  
+  /*CADRE FOND NOIR ET PHOTO*/
+  #objectif{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    transform: none;
+    max-width: 100vw;
+    margin:0;
+    padding:0;
+  }
+  #texte_objectif{
+    width:18rem;
+    margin: 2rem 0 2rem 28rem;
+    padding:1rem;
+    font-size:100%;
+    max-width:100vw;
+    align-self: center;
+    position: relative;
+  }
+  #texte_objectif p{
+    width:17rem;
+    text-align: center;
+  }
+  #photo_camion{
+    transition: none;
+    width:95vw;
+    margin:3rem 0;
+    padding:0;
+  }
+  
+  /*GIF CAMION*/
+  #camion{
+    max-width:90vw;
+    margin:2rem 0 15rem 0;
+  }
+}
+
+@media (max-width: 850px) and (orientation: landscape) {
+  #route{
+    display:none;
+  }
+
+  /*TITRE*/
+ .titre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    margin:0;
+  }
+  .titre:before, 
+  .titre:after{
+   width:80%;
+  }
+  .div_titre{
+    width:50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    position:relative;
+  }
+
+  /*PRÉSENTATION DES TOURNÉES*/
+  #presentation{
+    display: flex;
+    justify-content: center;
+    max-width:100vw;
+  }
+  #texte_presentation{
+    font-size:90%;
+    height:19rem;
+    text-align: center;
+    padding:1rem;
+    max-width:80vw;
+    margin:1rem;
+  }
+  
+  /*CADRE FOND NOIR ET PHOTO*/
+  #objectif{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    transform: none;
+    max-width: 100vw;
+    margin:0;
+    padding:0;
+  }
+  #texte_objectif{
+    width:18rem;
+    margin: 2rem 0 2rem 28rem;
+    padding:1rem;
+    font-size:100%;
+    max-width:100vw;
+    align-self: center;
+    position: relative;
+  }
+  #texte_objectif p{
+    width:17rem;
+    text-align: center;
+  }
+  #photo_camion{
+    transition: none;
+    width:95vw;
+    margin:3rem 0;
+    padding:0;
+  }
+  
+  /*GIF CAMION*/
+  #camion{
+    max-width:90vw;
+    margin:2rem 0 15rem 0;
+  }
+}
+
+@media (min-width: 720px) and (max-width:1025px) and (orientation: portrait) {
+  #route{
+    display:none;
+  }
+
+  /*TITRE*/
+ .titre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    margin:0;
+  }
+  .titre:before, 
+  .titre:after{
+   width:80%;
+  }
+  .div_titre{
+    width:50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    position:relative;
+  }
+
+  /*PRÉSENTATION DES TOURNÉES*/
+  #presentation{
+    display: flex;
+    justify-content: center;
+    max-width:100vw;
+  }
+  #texte_presentation{
+    font-size:90%;
+    height:19rem;
+    text-align: center;
+    padding:1rem;
+    max-width:80vw;
+    margin:1rem;
+  }
+  
+  /*CADRE FOND NOIR ET PHOTO*/
+  #objectif{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    transform: none;
+    max-width: 100vw;
+    margin:0;
+    padding:0;
+  }
+  #texte_objectif{
+    width:18rem;
+    margin: 2rem 0 2rem 28rem;
+    padding:1rem;
+    font-size:100%;
+    max-width:100vw;
+    align-self: center;
+    position: relative;
+  }
+  #texte_objectif p{
+    width:17rem;
+    text-align: center;
+  }
+  #photo_camion{
+    transition: none;
+    width:95vw;
+    margin:3rem 0;
+    padding:0;
+  }
+  
+  /*GIF CAMION*/
+  #camion{
+    max-width:90vw;
+    margin:2rem 0 15rem 0;
+  }
+}
