@@ -3,6 +3,7 @@ header {
 }
 h2{
   font-family: "Comic Sans MS";
+  margin-bottom: 50px;
 }
 .div_titre{
   padding: 0;
@@ -45,7 +46,7 @@ h2{
   border: 2px solid #dbaa6a;
   background-color: rgba(255, 255, 255, 0.898);
 }
-.contact-formContener {
+.contact-formContener, #carteContact {
   background-color: rgb(33, 33, 33);
   border-radius: 5px;
   padding: 5px;
@@ -58,8 +59,8 @@ h2{
   font-size: 25px;
   color: #d70019;
 }
-.contact-form input {
-  padding: 10px 8px;
+#name, #mail {
+  padding: 9px 8px;
   outline: none;
   border: none;
   border-bottom: 2px solid #ccc;
@@ -67,10 +68,9 @@ h2{
   color: rgb(0, 0, 0);
   font-size: 18px;
   border-radius: 5px;
-  margin-bottom: 10px;
-  width: 330px;
+  width: 295px;
 }
-.contact-form input:focus {
+#name:focus, #mail:focus, #message:focus {
   border-bottom: 2px solid #d70019;
 }
 .contact-form button {
@@ -103,17 +103,17 @@ textarea {
 }
 /*############################################################# CARTE CONTACT ######################################################################*/
 /*############################################################# CARTE CONTACT ######################################################################*/
-#carteContact,
 .adresse,
 .telephone,
 .fax,
 .lienTel,
 .mail {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 }
-#carteContact {
+ /* {
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
@@ -123,9 +123,28 @@ textarea {
   height: 270px;
   padding: 40px;
   margin: 10px;
+} */
+#btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 33px;
+  text-align: center;
+  font-family: "Comic Sans MS";
 }
-#carteContact p {
-  width: 200px;
+#carteContact p, #carteContact a {
+  width: 150px;
+  color: rgb(102, 99, 99);
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+#carteContact{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 .adresse,
 .telephone,
@@ -134,23 +153,19 @@ textarea {
   border: solid #ccc 2px;
   border-radius: 3px;
   background-color: rgb(255, 255, 255);
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   flex-flow: row wrap;
   color: rgb(102, 99, 99);
   font-weight: 540;
-  margin-bottom: 10px;
-  padding: 5px;
-  width: 85%;
+  margin-bottom: 25px;
+  width: 295px;
   border-radius: 5px;
 }
 #carteContact img {
   width: 40px;
   display: flex;
   align-items: center;
-  margin-left: -5px;
-  margin-right: 60px;
-  padding: 4px;
 }
 .mail {
   border: none;
