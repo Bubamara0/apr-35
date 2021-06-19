@@ -1,6 +1,10 @@
 header {
   margin: 0 !important;
 }
+h2{
+  padding: 2rem 0 0 0;
+}
+
 /*########################################################## SECTION REMERCIEMENTS ####################################################################*/
 /*########################################################## SECTION REMERCIEMENTS ####################################################################*/
 .remerciements {
@@ -9,8 +13,42 @@ header {
   justify-content: space-evenly;
   flex-direction: column;
   width: 100%;
-  margin: 70px 0px 70px 0px;
-  background-color: white;
+}
+.rightRemerciements{
+  display: flex;
+  width: 90%;
+  align-items: right;
+  justify-content: right;
+}
+/* --################################################################# REMERCIEMENTS #############################################################-- */
+/* --################################################################# REMERCIEMENTS #############################################################-- */
+#presentation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+}
+#presentation p {
+  width: 25rem;
+}
+#texte_presentation{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width:25rem;
+  padding: 0rem 3rem 2rem 3rem;
+  margin:0 3rem 3rem 3rem;
+  border-left:5px #d70019 solid;
+  line-height: 30px;
+  color:#474747;
+  background-color:rgba(255, 254, 254, 0.575);
+  opacity: 0;
+  transition-duration: 1s;
+}
+#texte_presentation p{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
 }
 /*######################################################### SECTION CARTES DE REMERCIEMENTS #########################################################*/
 /*######################################################### SECTION CARTES DE REMERCIEMENTS #########################################################*/
@@ -21,54 +59,30 @@ header {
   display: flex;
   align-items: center;
 }
-.decoFond {
-  justify-content: space-evenly;
-  width: 100%;
-  padding: 10px 0px 10px 0px;
-  background-image: url(../img/menu/fond1.png);
-}
-.phraseAccroche {
-  padding: 20px;
-  text-align: center;
-  color: #dbaa6a;
-  letter-spacing: 1px;
-  word-spacing: 2px;
-  font-weight: 600;
-}
-.divMerciSection2 {
-  text-transform: uppercase;
+/*############################################################################ CARTE MERCI ##################################################################################*/
+/*############################################################################ CARTE MERCI ##################################################################################*/
+.dispositionCarte{
+  display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 50px 0px 70px 0px;
-  width: 100%;
-  text-align: center;
-  color: #d70019;
-  background-color: rgb(255, 255, 255);
+  padding: 50px 0 50px 0;
 }
-.merciSection2 {
-  width: 50%;
-  font-weight: 600;
-}
-
-/*############################################################################ CARTE MERCI ##################################################################################*/
-/*############################################################################ CARTE MERCI ##################################################################################*/
-
 .contenerCartesMerci {
   flex-flow: row wrap;
   justify-content: space-evenly;
-  background-color: rgb(255, 255, 255);
+  align-items: center;
   border-radius: 50px;
-  width: 65%;
+  width: 75%;
 }
 .cartesMerci {
   justify-content: space-between;
   flex-flow: column;
   overflow: hidden;
   width: 300px;
-  height: 250px;
+  height: 230px;
   padding-bottom: 40px;
   position: relative;
   text-align: center;
-  border: solid 2px #dbaa6a;
   box-shadow: 1px 1px 5px 1px;
   border-radius: 25px;
   margin: 10px 0px 10px 0px;
@@ -108,7 +122,6 @@ header {
   transition: all 0.5s;
 }
 .cartesMerci a:hover {
-  font-size: 110%;
   color: #d70019;
 }
 .pro {
