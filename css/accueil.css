@@ -3,9 +3,11 @@
 .divLame {
   position: absolute;
   margin-top: 200px;
+  
 }
-.divLame p {
+.divLame h1 {
   background-color: rgba(0, 0, 0, 0.747);
+  font-weight: 300;
   z-index: 1;
   text-align: center;
   width: 100%;
@@ -18,8 +20,7 @@
 }
 #lame {
   width: 170px;
-  animation: 8s linear 0s infinite normal backwards;
-  animation-name: rotation;
+  animation: 8s linear 0s infinite normal backwards rotation;
   z-index: 0;
 }
 #lame:hover {
